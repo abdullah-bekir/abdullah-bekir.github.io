@@ -270,6 +270,29 @@ h3{font-size:1.25rem}
 .j-item h3{font-size:1.1rem;margin-bottom:6px}
 .j-item p{color:var(--muted);font-size:.92rem}
 
+/* ---------- cila: ikonlar, efektler ---------- */
+.ico svg,.p-ico svg{fill:none;stroke:var(--c,var(--brand));stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;width:28px;height:28px}
+.p-ico svg{width:44px;height:44px;stroke:var(--brand-ink)}
+.ico{transition:transform .35s,background .35s}
+.card:hover .ico,.sk-group:hover .ico{transform:translateY(-3px) rotate(-6deg);background:color-mix(in srgb,var(--c,var(--brand)) 26%,transparent)}
+.hero::after,.page-hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(520px circle at var(--sx,72%) var(--sy,18%),rgba(245,185,66,.14),transparent 62%);transition:background .1s}
+.grad{background-size:200% 100%;animation:gradmove 6s ease-in-out infinite alternate}
+@keyframes gradmove{to{background-position:100% 0}}
+.btn{position:relative;overflow:hidden}
+.btn::after{content:"";position:absolute;top:0;left:-70%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .6s}
+.btn:hover::after{left:130%}
+.btn-ghost::after{display:none}
+.nav-in{transition:padding .3s,box-shadow .3s,background .3s}
+.nav.scrolled .nav-in{padding-block:6px;box-shadow:0 14px 40px -12px rgba(0,0,0,.35);background:color-mix(in srgb,var(--surface) 88%,transparent)}
+.to-top{position:fixed;right:20px;bottom:20px;z-index:55;width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;display:grid;place-items:center;font-size:1.2rem;font-weight:700;color:var(--on-brand);background:linear-gradient(135deg,#fcd34d,var(--brand));box-shadow:0 10px 26px -8px rgba(245,185,66,.7);opacity:0;transform:translateY(16px);pointer-events:none;transition:.3s}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}
+.to-top:hover{transform:translateY(-3px)}
+:root[data-theme="dark"] .card,:root[data-theme="dark"] .tile,:root[data-theme="dark"] .sk-group,:root[data-theme="dark"] .show,:root[data-theme="dark"] .b-card,:root[data-theme="dark"] .j-item{box-shadow:0 1px 0 rgba(255,255,255,.04) inset}
+:root[data-theme="dark"] .pill,:root[data-theme="dark"] .link-all{background:var(--surface2)}
+
+.h-ico{display:inline-grid;place-items:center;width:30px;height:30px;margin-right:8px;border-radius:9px;vertical-align:-8px;background:color-mix(in srgb,var(--brand) 18%,transparent)}
+.h-ico svg{width:17px;height:17px;fill:none;stroke:var(--brand-ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
 /* home page */
 .hero .lead{max-width:500px}
 .hero-phones{min-height:560px;width:100%}

@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||'dark'}catch(e){document.documentElement.dataset.theme='dark'}</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -49,7 +50,7 @@
     <div class="filters" role="tablist" aria-label="Uygulama filtresi">
       <button class="on" data-f="all">Tümü</button>
       <button data-f="egitim">🌍 Eğitim</button>
-      <button data-f="verimlilik">🗓 Verimlilik</button>
+      <button data-f="verimlilik">📅 Verimlilik</button>
       <button data-f="yardimci">🌤 Yardımcı</button>
     </div>
 
@@ -81,7 +82,7 @@
         <div class="show-art">
           <div class="mini">
             <div class="m-top"><i></i><i></i><i></i></div>
-            <div class="m-emoji">🗓</div>
+            <div class="m-emoji">📅</div>
             <div class="m-line w80"></div><div class="m-line w60"></div>
             <div class="m-pill">Bugünün planı</div>
           </div>
@@ -134,7 +135,7 @@
         <thead><tr><th>Uygulama</th><th>Kategori</th><th>Amaç</th><th>Platform</th><th>Yapay zeka</th></tr></thead>
         <tbody>
           <tr><td><b>🌍 Language Learn</b></td><td>Eğitim</td><td>Dil öğrenmeyi kolaylaştırmak</td><td>Mobil</td><td><span class="yes">✓ Destekli</span></td></tr>
-          <tr><td><b>🗓 Planly</b></td><td>Verimlilik</td><td>Günü ve hedefleri planlamak</td><td>Mobil</td><td><span class="yes">✓ Destekli</span></td></tr>
+          <tr><td><b>📅 Planly</b></td><td>Verimlilik</td><td>Günü ve hedefleri planlamak</td><td>Mobil</td><td><span class="yes">✓ Destekli</span></td></tr>
           <tr><td><b>🌤 Hava Durumu</b></td><td>Yardımcı</td><td>Güncel hava bilgisini sunmak</td><td>Mobil</td><td><span class="yes">✓ Destekli</span></td></tr>
         </tbody>
       </table>
@@ -147,9 +148,9 @@
     <span class="eyebrow">Ortak yaklaşım</span>
     <h2>Her uygulamada aynı ilkeler</h2>
     <div class="cards">
-      <div class="card reveal" style="--c:#f5b942"><div class="ico">✨</div><h3>Yapay zeka ile güçlü</h3><p>Her ürün, yapay zeka araçlarıyla daha akıllı ve daha hızlı geliştirildi.</p></div>
-      <div class="card reveal" style="--c:#60a5fa"><div class="ico">📱</div><h3>Mobil öncelikli</h3><p>Telefonda rahat kullanım için sade ve hızlı arayüzler tasarlandı.</p></div>
-      <div class="card reveal" style="--c:#12b886"><div class="ico">🎯</div><h3>Gerçek ihtiyaç</h3><p>Her uygulama günlük hayatta karşılaşılan somut bir sorunu çözmeye odaklanır.</p></div>
+      <div class="card reveal" style="--c:#f5b942"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.7 4.7 1.8-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.7 1.8 1.8.7-1.8.7L19 20l-.7-1.8-1.8-.7 1.8-.7z"/></svg></div><h3>Yapay zeka ile güçlü</h3><p>Her ürün, yapay zeka araçlarıyla daha akıllı ve daha hızlı geliştirildi.</p></div>
+      <div class="card reveal" style="--c:#60a5fa"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Mobil öncelikli</h3><p>Telefonda rahat kullanım için sade ve hızlı arayüzler tasarlandı.</p></div>
+      <div class="card reveal" style="--c:#12b886"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div><h3>Gerçek ihtiyaç</h3><p>Her uygulama günlük hayatta karşılaşılan somut bir sorunu çözmeye odaklanır.</p></div>
     </div>
   </div>
 </section>
@@ -192,7 +193,7 @@
         <h4>Uygulamalar</h4>
         <ul>
           <li><a href="uygulamalar.html">🌍 Language Learn</a></li>
-          <li><a href="uygulamalar.html">🗓 Planly</a></li>
+          <li><a href="uygulamalar.html">📅 Planly</a></li>
           <li><a href="uygulamalar.html">🌤 Hava Durumu</a></li>
         </ul>
       </div>
@@ -249,7 +250,7 @@
         <h4>Uygulama özeti</h4>
         <ul class="f-apps">
           <li><a href="uygulamalar.html"><b>🌍 Language Learn</b><span>Dil öğrenme · Eğitim</span></a></li>
-          <li><a href="uygulamalar.html"><b>🗓 Planly</b><span>Planlama · Verimlilik</span></a></li>
+          <li><a href="uygulamalar.html"><b>📅 Planly</b><span>Planlama · Verimlilik</span></a></li>
           <li><a href="uygulamalar.html"><b>🌤 Hava Durumu</b><span>Güncel hava bilgisi · Yardımcı</span></a></li>
         </ul>
       </div>

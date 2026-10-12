@@ -31,6 +31,24 @@ const onScroll = () => {
 addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
+// Menü kaydırınca küçülür, yukarı çık düğmesi, hero parlama efekti
+const navEl = document.querySelector('.nav');
+const toTop = document.createElement('button');
+toTop.className = 'to-top'; toTop.setAttribute('aria-label', 'Yukarı çık'); toTop.textContent = '↑';
+toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+document.body.appendChild(toTop);
+addEventListener('scroll', () => {
+  navEl.classList.toggle('scrolled', scrollY > 30);
+  toTop.classList.toggle('show', scrollY > 600);
+}, { passive: true });
+document.querySelectorAll('.hero, .page-hero').forEach(h => {
+  h.addEventListener('pointermove', e => {
+    const r = h.getBoundingClientRect();
+    h.style.setProperty('--sx', (e.clientX - r.left) + 'px');
+    h.style.setProperty('--sy', (e.clientY - r.top) + 'px');
+  });
+});
+
 // Yıl
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();

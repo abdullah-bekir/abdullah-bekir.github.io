@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||'dark'}catch(e){document.documentElement.dataset.theme='dark'}</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -63,7 +64,7 @@
         <div class="screen">
           <div class="s-title">Bugün</div>
           <div class="s-card c1"><span>🌤</span><div><b>Hava Durumu</b><small>Güncel tahmin</small></div></div>
-          <div class="s-card c2"><span>🗓</span><div><b>Planly</b><small>Günlük plan</small></div></div>
+          <div class="s-card c2"><span>📅</span><div><b>Planly</b><small>Günlük plan</small></div></div>
           <div class="s-card c3"><span>🌍</span><div><b>Language Learn</b><small>Yeni kelimeler</small></div></div>
           <div class="s-bar"><i></i></div>
           <div class="s-chart"><i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:50%"></i><i style="--h:85%"></i><i style="--h:60%"></i><i style="--h:95%"></i><i style="--h:72%"></i></div>
@@ -74,7 +75,7 @@
         <div class="notch"></div>
         <div class="screen">
           <div class="s-title">Plan</div>
-          <div class="s-big" style="--c:#12b886"><span>🗓</span><b>Planly</b><small>Günün görevleri</small></div>
+          <div class="s-big" style="--c:#12b886"><span>📅</span><b>Planly</b><small>Günün görevleri</small></div>
           <div class="s-bar"><i style="width:80%"></i></div>
         </div>
       </div></div>
@@ -108,7 +109,7 @@
         <div class="tile-body"><span class="badge">Eğitim</span><h3>Language Learn</h3><p>Yeni bir dil öğrenmeyi kolay, düzenli ve motive edici hale getiren uygulama.</p><span class="more">Detayları gör →</span></div>
       </a>
       <a class="tile reveal" href="uygulamalar.html" style="--c:#12b886">
-        <div class="show-art"><div class="mini"><div class="m-top"><i></i><i></i><i></i></div><div class="m-emoji">🗓</div><div class="m-line w80"></div><div class="m-line w60"></div><div class="m-pill">Bugünün planı</div></div></div>
+        <div class="show-art"><div class="mini"><div class="m-top"><i></i><i></i><i></i></div><div class="m-emoji">📅</div><div class="m-line w80"></div><div class="m-line w60"></div><div class="m-pill">Bugünün planı</div></div></div>
         <div class="tile-body"><span class="badge">Verimlilik</span><h3>Planly</h3><p>Günlük işleri ve hedefleri düzenli tutan, zamanı verimli kullandıran planlama uygulaması.</p><span class="more">Detayları gör →</span></div>
       </a>
       <a class="tile reveal" href="uygulamalar.html" style="--c:#339af0">
@@ -131,10 +132,10 @@
         <p>Yapay zekayı bir moda olarak değil, daha akıllı ve daha hızlı ürün üretmenin bir yolu olarak görüyorum.</p>
       </div>
       <div class="b-card b-stat alt reveal"><b data-count="2" data-suffix="+">0</b><span>yıldır yazılımla<br>iç içeyim</span></div>
-      <div class="b-card reveal"><h3>⚡ Hızlı üretim</h3><p>Yapay zeka araçlarıyla fikirden çalışan ürüne kısa yoldan ulaşıyorum.</p></div>
-      <div class="b-card reveal"><h3>🎯 Kullanıcı odaklı</h3><p>Sade, anlaşılır ve gerçekten işe yarayan arayüzler tasarlıyorum.</p></div>
-      <div class="b-card reveal"><h3>🌱 Sürekli öğrenme</h3><p>Her projeden yeni bir şey öğrenip bir sonrakine yansıtıyorum.</p></div>
-      <div class="b-card reveal"><h3>🚀 Girişimci bakış</h3><p>Sadece kod yazmıyorum; ürünün kime, neden lazım olduğunu da düşünüyorum.</p></div>
+      <div class="b-card reveal"><h3><span class="h-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span> Hızlı üretim</h3><p>Yapay zeka araçlarıyla fikirden çalışan ürüne kısa yoldan ulaşıyorum.</p></div>
+      <div class="b-card reveal"><h3><span class="h-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span> Kullanıcı odaklı</h3><p>Sade, anlaşılır ve gerçekten işe yarayan arayüzler tasarlıyorum.</p></div>
+      <div class="b-card reveal"><h3><span class="h-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4 3-6 7-6 0 4-3 6-7 6z"/><path d="M12 14c0-3-2-5-6-5 0 3 2 5 6 5z"/></svg></span> Sürekli öğrenme</h3><p>Her projeden yeni bir şey öğrenip bir sonrakine yansıtıyorum.</p></div>
+      <div class="b-card reveal"><h3><span class="h-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22 22 0 0 1-4 2z"/></svg></span> Girişimci bakış</h3><p>Sadece kod yazmıyorum; ürünün kime, neden lazım olduğunu da düşünüyorum.</p></div>
     </div>
   </div>
 </section>
@@ -162,9 +163,9 @@
     <span class="eyebrow">Keşfet</span>
     <h2>Daha fazlasını öğren</h2>
     <div class="cards">
-      <a class="card reveal" href="hakkimda.html" style="--c:#f5b942"><div class="ico">👋</div><h3>Hakkımda</h3><p>Ben kimim, nasıl çalışıyorum ve neden yapay zeka destekli mobil uygulamalar geliştiriyorum?</p><span class="more">Sayfaya git →</span></a>
-      <a class="card reveal" href="yetenekler.html" style="--c:#60a5fa"><div class="ico">⚡</div><h3>Yetenekler</h3><p>Mobil geliştirme, yapay zeka entegrasyonu ve ürün geliştirme alanlarındaki yetkinliklerim.</p><span class="more">Sayfaya git →</span></a>
-      <a class="card reveal" href="iletisim.html" style="--c:#fb923c"><div class="ico">✉️</div><h3>İletişim</h3><p>Proje fikrin ya da iş birliği teklifin için bana yazabilirsin.</p><span class="more">Sayfaya git →</span></a>
+      <a class="card reveal" href="hakkimda.html" style="--c:#f5b942"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg></div><h3>Hakkımda</h3><p>Ben kimim, nasıl çalışıyorum ve neden yapay zeka destekli mobil uygulamalar geliştiriyorum?</p><span class="more">Sayfaya git →</span></a>
+      <a class="card reveal" href="yetenekler.html" style="--c:#60a5fa"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><h3>Yetenekler</h3><p>Mobil geliştirme, yapay zeka entegrasyonu ve ürün geliştirme alanlarındaki yetkinliklerim.</p><span class="more">Sayfaya git →</span></a>
+      <a class="card reveal" href="iletisim.html" style="--c:#fb923c"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><h3>İletişim</h3><p>Proje fikrin ya da iş birliği teklifin için bana yazabilirsin.</p><span class="more">Sayfaya git →</span></a>
     </div>
   </div>
 </section>
@@ -198,7 +199,7 @@
         <h4>Uygulamalar</h4>
         <ul>
           <li><a href="uygulamalar.html">🌍 Language Learn</a></li>
-          <li><a href="uygulamalar.html">🗓 Planly</a></li>
+          <li><a href="uygulamalar.html">📅 Planly</a></li>
           <li><a href="uygulamalar.html">🌤 Hava Durumu</a></li>
         </ul>
       </div>
@@ -255,7 +256,7 @@
         <h4>Uygulama özeti</h4>
         <ul class="f-apps">
           <li><a href="uygulamalar.html"><b>🌍 Language Learn</b><span>Dil öğrenme · Eğitim</span></a></li>
-          <li><a href="uygulamalar.html"><b>🗓 Planly</b><span>Planlama · Verimlilik</span></a></li>
+          <li><a href="uygulamalar.html"><b>📅 Planly</b><span>Planlama · Verimlilik</span></a></li>
           <li><a href="uygulamalar.html"><b>🌤 Hava Durumu</b><span>Güncel hava bilgisi · Yardımcı</span></a></li>
         </ul>
       </div>
