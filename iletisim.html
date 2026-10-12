@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İletişim · Abdullah Bekir</title>
+<meta name="description" content="Abdullah Bekir ile iletişime geç: proje, iş birliği veya sorularınız için yazın.">
+<meta name="theme-color" content="#070d1a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23f5b942'/><text x='50' y='67' font-size='56' text-anchor='middle' fill='%230b1220' font-family='Arial' font-weight='700'>AB</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav"><div class="nav-in">
+  <a href="index.html" class="brand"><span class="logo">AB</span> Abdullah Bekir</a>
+  <nav class="links" id="links" aria-label="Ana menü">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hakkimda.html">Hakkımda</a>
+    <a href="uygulamalar.html">Uygulamalar</a>
+    <a href="yetenekler.html">Yetenekler</a>
+    <a href="yaklasim.html">Yaklaşım</a>
+    <a href="iletisim.html" class="btn">İletişim</a>
+  </nav>
+  <button class="theme" id="theme" aria-label="Temayı değiştir">◐</button>
+  <button class="burger" id="burger" aria-label="Menüyü aç" aria-expanded="false"><span></span><span></span></button>
+</div></header>
+
+<main>
+<section class="page-hero">
+  <div class="gridbg"></div><div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Ana Sayfa</a> <span>/</span> <span>İletişim</span></div>
+    <span class="eyebrow">İletişim</span>
+    <h1>Bir projen mi var? <span class="grad">Konuşalım.</span></h1>
+    <p class="lead">Yapay zeka destekli bir mobil uygulama fikrin varsa ya da iş birliği yapmak istersen bana yazabilirsin.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap contact-grid">
+    <div class="info reveal">
+      <div class="mail-card">
+        <span class="ic">✉️</span>
+        <div><small>E-posta</small><b id="mail">abdullahbekir780@gmail.com</b></div>
+        <div class="mail-actions">
+          <button type="button" class="mini-btn" id="copy">Kopyala</button>
+          <a class="mini-btn gold" href="mailto:abdullahbekir780@gmail.com">Yaz</a>
+        </div>
+      </div>
+      <div class="info-card"><span class="ic">⚡</span><div><small>Uzmanlık</small><b>Yapay zeka destekli mobil uygulamalar</b></div></div>
+      <div class="info-card"><span class="ic">🌍</span><div><small>Çalışma şekli</small><b>Uzaktan iş birliğine açığım</b></div></div>
+      <a class="info-card gh" href="https://github.com/abdullah-bekir" target="_blank" rel="noopener"><span class="ic">💻</span><div><small>GitHub</small><b>github.com/abdullah-bekir</b></div></a>
+      <div class="info-card"><span class="ic">🗣</span><div><small>Dil</small><b>Türkçe</b></div></div>
+
+      <ol class="how">
+        <li><span>1</span> Formu doldur</li>
+        <li><span>2</span> Gönder'e bas</li>
+        <li><span>3</span> Mesajın doğrudan bana ulaşır</li>
+      </ol>
+    </div>
+
+    <form class="form reveal" id="contact-form" novalidate>
+      <div>
+        <h2 class="f-title">Mesaj bırak</h2>
+        <p class="f-sub">Ne hakkında yazmak istiyorsun? <span class="req-note"><i class="req">*</i> işaretli alanlar zorunludur.</span></p>
+        <div class="topics" id="topics">
+          <button type="button" class="on" data-t="Mobil uygulama fikri">📱 Uygulama fikri</button>
+          <button type="button" data-t="İş birliği">🤝 İş birliği</button>
+          <button type="button" data-t="Soru / Geri bildirim">💬 Soru</button>
+          <button type="button" data-t="Diğer">✨ Diğer</button>
+        </div>
+      </div>
+
+      <div class="two-in">
+        <div class="field" data-f="ad">
+          <label for="ad">Adın <i class="req">*</i></label>
+          <div class="inp"><input type="text" id="ad" name="ad" placeholder="Adın" autocomplete="given-name"><span class="tick">✓</span></div>
+          <small class="err"></small>
+        </div>
+        <div class="field" data-f="soyad">
+          <label for="soyad">Soyadın <i class="req">*</i></label>
+          <div class="inp"><input type="text" id="soyad" name="soyad" placeholder="Soyadın" autocomplete="family-name"><span class="tick">✓</span></div>
+          <small class="err"></small>
+        </div>
+      </div>
+
+      <div class="field" data-f="eposta">
+        <label for="eposta">E-posta adresin <i class="req">*</i></label>
+        <div class="inp"><input type="email" id="eposta" name="eposta" placeholder="ornek@mail.com" autocomplete="email"><span class="tick">✓</span></div>
+        <small class="err"></small>
+      </div>
+
+      <div class="field" data-f="tel">
+        <label for="tel">Telefon numaran <i class="req">*</i></label>
+        <div class="phone-row">
+          <div class="cc" id="cc">
+            <button type="button" id="cc-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Ülke kodu seç">
+              <img id="cc-flag" alt="" width="22" height="16"><span id="cc-code">+90</span><em>▾</em>
+            </button>
+            <div class="cc-panel" id="cc-panel" hidden>
+              <input type="search" id="cc-search" placeholder="Ülke veya kod ara..." autocomplete="off">
+              <ul id="cc-list" role="listbox"></ul>
+            </div>
+          </div>
+          <div class="inp"><input type="tel" id="tel" name="tel" inputmode="tel" placeholder="5xx xxx xx xx" autocomplete="tel-national"><span class="tick">✓</span></div>
+        </div>
+        <small class="err"></small>
+      </div>
+
+      <div class="field" data-f="konu">
+        <label for="konu">Konu <i class="req">*</i></label>
+        <div class="inp"><input type="text" id="konu" name="konu" value="Mobil uygulama fikri" placeholder="Konu"><span class="tick">✓</span></div>
+        <small class="err"></small>
+      </div>
+
+      <div class="field" data-f="mesaj">
+        <label for="mesaj">Mesajın <i class="req">*</i></label>
+        <div class="inp"><textarea id="mesaj" name="mesaj" maxlength="1000" placeholder="Projeni ya da sorunu kısaca anlat..."></textarea></div>
+        <div class="msg-foot"><small class="err"></small><small class="count"><span id="cnt">0</span> / 1000</small></div>
+      </div>
+
+      <button class="btn" type="submit">Mesajı Gönder →</button>
+      <p class="note" id="form-note">Tüm zorunlu alanlar doldurulmadan form gönderilmez. Mesajın doğrudan bana iletilir.</p>
+    </form>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap faq-wrap">
+    <div>
+      <span class="eyebrow">Sık sorulanlar</span>
+      <h2>Yazmadan önce</h2>
+    </div>
+    <div class="faq reveal">
+      <details open><summary>Hangi konularda yazabilirim?</summary><p>Mobil uygulama fikirleri, yapay zeka destekli ürünler, iş birliği teklifleri ya da uygulamalarım hakkındaki sorular için yazabilirsin.</p></details>
+      <details><summary>Form nasıl çalışıyor?</summary><p>Formu eksiksiz doldurup gönderdiğinde mesajın doğrudan bana iletilir. Bir sorun olursa e-posta uygulaman hazır mesajla açılır.</p></details>
+      <details><summary>Doğrudan e-posta atabilir miyim?</summary><p>Elbette. Yukarıdaki e-posta adresine istediğin zaman yazabilirsin.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="f-live">
+      <div><small>Bugün</small><b id="f-date">—</b></div>
+      <div><small>Yerel saat (TR)</small><b id="f-time">—</b></div>
+      <div><small>Durum</small><b><span class="dot"></span>Yeni projelere açık</b></div>
+      <div><small>Geliştirilen uygulama</small><b><em>3</em> mobil uygulama</b></div>
+    </div>
+
+    <div class="f-grid">
+      <div>
+        <h4>Hakkında</h4>
+        <p>Yapay zeka destekli mobil uygulamalar geliştiriyorum. 2 yılı aşkın yazılım deneyimiyle fikirleri sade, hızlı ve kullanışlı ürünlere dönüştürüyorum.</p>
+      </div>
+      <div>
+        <h4>Sayfalar</h4>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="hakkimda.html">Hakkımda</a></li>
+          <li><a href="uygulamalar.html">Uygulamalar</a></li>
+          <li><a href="yetenekler.html">Yetenekler</a></li>
+          <li><a href="yaklasim.html">Yaklaşım</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Uygulamalar</h4>
+        <ul>
+          <li><a href="uygulamalar.html">🌍 Language Learn</a></li>
+          <li><a href="uygulamalar.html">🗓 Planly</a></li>
+          <li><a href="uygulamalar.html">🌤 Hava Durumu</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>İletişim</h4>
+        <ul>
+          <li><a href="mailto:abdullahbekir780@gmail.com">abdullahbekir780@gmail.com</a></li>
+          <li><a href="iletisim.html">İletişim formu</a></li>
+          <li><a href="iletisim.html">Proje teklifi gönder</a></li>
+          <li><a href="https://github.com/abdullah-bekir" target="_blank" rel="noopener">GitHub · abdullah-bekir ↗</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="f-grid f-grid2">
+      <div>
+        <h4>Uzmanlık alanları</h4>
+        <ul>
+          <li><a href="yetenekler.html">Mobil uygulama geliştirme</a></li>
+          <li><a href="yetenekler.html">Yapay zeka entegrasyonu</a></li>
+          <li><a href="yetenekler.html">Ürün tasarımı &amp; kullanıcı deneyimi</a></li>
+          <li><a href="yetenekler.html">Girişimcilik &amp; fikir geliştirme</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Çalışma sürecim</h4>
+        <ul class="f-steps">
+          <li><span>01</span> Keşfet</li>
+          <li><span>02</span> Tasarla</li>
+          <li><span>03</span> Geliştir</li>
+          <li><span>04</span> Geliştirmeye devam</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hızlı bilgiler</h4>
+        <dl class="f-facts">
+          <div><dt>Unvan</dt><dd>Uzman girişimci</dd></div>
+          <div><dt>Deneyim</dt><dd>2+ yıl yazılım</dd></div>
+          <div><dt>Odak</dt><dd>AI destekli mobil</dd></div>
+          <div><dt>Projeler</dt><dd>3 mobil uygulama</dd></div>
+          <div><dt>Dil</dt><dd>Türkçe</dd></div>
+        </dl>
+      </div>
+      <div>
+        <h4>Sık sorulanlar</h4>
+        <ul class="f-faq">
+          <li><b>Ne tür uygulamalar geliştiriyorsun?</b><span>Yapay zeka destekli mobil uygulamalar.</span></li>
+          <li><b>Bana nasıl ulaşabilirim?</b><span>E-posta ile ya da <a href="iletisim.html">iletişim formu</a> üzerinden.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-grid f-grid2 f-grid3">
+      <div>
+        <h4>Uygulama özeti</h4>
+        <ul class="f-apps">
+          <li><a href="uygulamalar.html"><b>🌍 Language Learn</b><span>Dil öğrenme · Eğitim</span></a></li>
+          <li><a href="uygulamalar.html"><b>🗓 Planly</b><span>Planlama · Verimlilik</span></a></li>
+          <li><a href="uygulamalar.html"><b>🌤 Hava Durumu</b><span>Güncel hava bilgisi · Yardımcı</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Neden birlikte çalışalım?</h4>
+        <ul class="f-checks">
+          <li>Yapay zeka destekli hızlı geliştirme</li>
+          <li>Sade, kullanıcı odaklı tasarım</li>
+          <li>Sürekli öğrenen, gelişen yaklaşım</li>
+          <li>Fikirden yayına uçtan uca süreç</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Yetenek grupları</h4>
+        <ul>
+          <li><a href="yetenekler.html">📱 Geliştirme</a></li>
+          <li><a href="yetenekler.html">✨ Yapay Zeka</a></li>
+          <li><a href="yetenekler.html">🚀 Ürün &amp; Girişimcilik</a></li>
+          <li><a href="hakkimda.html">🌱 Değerlerim</a></li>
+          <li><a href="yaklasim.html">🧭 Çalışma sürecim</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hızlı iletişim</h4>
+        <p>Proje fikrin ya da bir sorun varsa e-posta yazman yeterli.</p>
+        <a class="btn f-btn" href="mailto:abdullahbekir780@gmail.com">E-posta Gönder →</a>
+      </div>
+    </div>
+    <div class="f-bottom"><span>© <span id="year"></span> · Tüm hakları saklıdır.</span><a href="#">Yukarı çık ↑</a></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
