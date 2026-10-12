@@ -20,6 +20,17 @@ burger.addEventListener('click', () => {
   burger.setAttribute('aria-expanded', open);
 });
 
+// Sayfa okuma ilerleme çubuğu
+const bar = document.createElement('div');
+bar.className = 'scroll-progress';
+document.body.prepend(bar);
+const onScroll = () => {
+  const h = document.documentElement.scrollHeight - innerHeight;
+  bar.style.transform = `scaleX(${h > 0 ? Math.min(1, scrollY / h) : 0})`;
+};
+addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
 // Yıl
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
