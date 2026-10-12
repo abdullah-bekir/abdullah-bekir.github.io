@@ -270,6 +270,38 @@ h3{font-size:1.25rem}
 .j-item h3{font-size:1.1rem;margin-bottom:6px}
 .j-item p{color:var(--muted);font-size:.92rem}
 
+/* home page */
+.hero-phones{min-height:560px;width:100%}
+.ph-main{position:relative;z-index:2}
+.ph-side{position:absolute;z-index:1;top:70px}
+.ph-l{left:-30px;transform:rotate(-9deg)}
+.ph-r{right:-30px;transform:rotate(9deg)}
+.phone.sm{width:206px;height:420px;padding:10px;border-radius:34px;opacity:.92;animation-delay:-3s}
+.phone.sm .screen{border-radius:25px;padding:34px 12px 12px}
+.phone.sm .s-title{font-size:1.1rem}
+.s-big{display:grid;justify-items:center;gap:4px;padding:22px 10px;border-radius:18px;text-align:center;background:color-mix(in srgb,var(--c) 22%,#0a1120);border:1px solid color-mix(in srgb,var(--c) 55%,transparent)}
+.s-big span{font-size:2.4rem}
+.s-big b{font-size:.9rem}
+.s-big small{color:#a9b7d4;font-size:.72rem}
+.hero-phones .ch1{top:30px;left:6%}
+.hero-phones .ch2{bottom:50px;right:4%}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.link-all{font-weight:600;color:var(--brand-ink);padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:var(--surface);transition:.2s}
+.link-all:hover{border-color:var(--brand);transform:translateX(4px)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+.tile{display:flex;flex-direction:column;border-radius:26px;overflow:hidden;background:var(--surface);border:1px solid var(--line);transition:transform .3s,box-shadow .3s,border-color .3s}
+.tile:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--c) 55%,var(--line))}
+.tile .show-art{min-height:300px;padding:30px}
+.tile .mini{width:160px}
+.tile .m-emoji{width:70px;height:70px;font-size:2.1rem}
+.tile-body{padding:24px 26px 28px;display:grid;gap:8px;justify-items:start}
+.tile-body h3{font-size:1.4rem}
+.tile-body p{color:var(--muted);font-size:.95rem}
+.tile .badge{margin-bottom:0}
+.tile .more{margin-top:6px;color:var(--c)}
+.section .bento .b-card h3{font-size:1.15rem}
+.section .bento .b-card:not(.b-stat):not(.b-quote){grid-column:span 2}
+
 /* shared hero mini stats */
 .hero-mini{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
 .hero-mini li{padding:12px 20px;border-radius:16px;background:var(--surface);border:1px solid var(--line);display:flex;align-items:baseline;gap:10px}
@@ -430,6 +462,9 @@ h3{font-size:1.25rem}
 
 @media (max-width:940px){
   .hero-grid,.split,.app,.contact-grid,.about-grid{grid-template-columns:1fr}
+  .tiles{grid-template-columns:1fr 1fr}
+  .bento{grid-auto-flow:dense}
+  .hero-phones{min-height:520px}
   .faq-wrap{grid-template-columns:1fr;gap:26px}
   .info{position:static}
   .show,.show:nth-child(even){grid-template-columns:1fr}
@@ -455,6 +490,10 @@ h3{font-size:1.25rem}
   .links.open{opacity:1;visibility:visible;transform:none}
   .links .btn{justify-content:center;margin:6px 0 0}
   .cards,.cards.two-col,.values,.journey{grid-template-columns:1fr}
+  .tiles{grid-template-columns:1fr}
+  .ph-side{display:none}
+  .hero-phones{min-height:0}
+  .section .bento .b-card:not(.b-stat):not(.b-quote){grid-column:auto}
   .show-body{padding:28px 22px}
   .panels{padding:24px 20px}
   .panel.on{grid-template-columns:1fr;gap:16px}
